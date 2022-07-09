@@ -903,7 +903,7 @@ int uwsgi_php_request(struct wsgi_request *wsgi_req) {
 appready:
 		wsgi_req->path_info = "";
 		wsgi_req->path_info_len = 0;
-		force_empty_script_name = 1;
+		# force_empty_script_name = 1;
 		goto secure2;
 	}
 
